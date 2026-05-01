@@ -1,0 +1,239 @@
+body {
+	margin: 0px;
+	background-color: #f5f5f5;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#body-header {
+	height: 60vh;
+	background-image: url(image/macbook_mouse.jpg);
+	background-position: center;
+	background-size: cover;
+	opacity: 0.8;
+	background-attachment: fixed;
+	color: white;
+	font-family: "Lato", sans-serif;
+	line-height: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+#body-header h1 {
+	font-size: 4rem;
+	padding-left: 1em;
+	margin-top: 3.5em;
+	font-weight: 700;
+}
+/* Horizontal List */
+
+.horizontal-list {
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	margin: 0px;
+	text-align: center;
+	width: 80vw;
+}
+
+.horizontal-list li {
+	color: white;
+	list-style: none;
+}
+
+.horizontal-list li a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Social Media Navbar */
+#socialmedianav .horizontal-list {
+	width: 60vw;
+	font-size: 2em;
+}
+
+#socialmedianav .horizontal-list li a i {
+	padding: 0.3em;
+
+	border-radius: 50%;
+}
+
+#socialmedianav .horizontal-list li a i:hover {
+	box-shadow: 0 0 10px 5px rgba(230, 196, 196, 0.5);
+}
+
+#sitenav {
+	font-size: 1.5em;
+}
+
+/* smooth underline transition */
+#sitenav .horizontal-list li a {
+	position: relative;
+	/* display: inline-block; */
+	padding-bottom: 0.2em;
+}
+
+#sitenav .horizontal-list li a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background: white;
+	transition: width 0.25s ease;
+}
+
+#sitenav .horizontal-list li a:hover::after,
+#sitenav .horizontal-list li a:focus::after {
+	width: 100%;
+}
+
+/* About Section */
+#about {
+	padding: 2em;
+	text-align: center;
+}
+
+.profile-pic {
+	width: 12rem;
+	height: 12rem;
+	margin: auto;
+}
+
+.profile-pic img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	transform: translateY(-7rem);
+}
+
+.about-text {
+	margin-top: -4rem;
+	font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+	text-align: justify;
+}
+
+/* Skills */
+#skills {
+	text-align: center;
+}
+.section-heading {
+	text-align: center;
+	margin-bottom: 3rem;
+	font-weight: 400;
+	width: auto;
+}
+
+.section-heading span {
+	font-size: 2rem;
+	color: #2857a4;
+}
+
+.skills-display {
+	/* border: solid 1px black; */
+	width: 70%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+.skill-outer {
+	width: 13em;
+	height: 2.5em;
+	margin-bottom: 2rem;
+	border: solid 1px #2857a4;
+	border-radius: 30px;
+	overflow: hidden;
+	box-shadow: 0 0 10px 5px rgba(40, 87, 164, 0.2);
+}
+
+.skill-inner {
+	/* width: 90%; */
+	/* background-color: aquamarine; */
+	height: inherit;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	max-width: 100%;
+}
+
+.skill-inner p {
+	margin: auto;
+}
+
+.skill-name {
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+/* Timeline */
+.timeline {
+	width: 75%;
+	/* border: 2px solid black; */
+	position: relative;
+	margin: auto;
+	margin-bottom: 2rem;
+}
+
+.timeline-box {
+	width: 40%;
+	min-height: 3rem;
+	border: 2px solid black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	left: 5%;
+	position: relative;
+
+	box-shadow: 0 0 10px 5px rgba(40, 87, 164, 0.2);
+}
+.card {
+	margin: 0px;
+}
+.timeline-box:nth-child(2n) {
+	left: 55%;
+}
+
+.card-heading {
+	line-height: 1em;
+	margin-bottom: 2rem;
+}
+
+.card-heading span {
+	color: #323131;
+	font-size: 0.9em;
+}
+
+.timeline-divider {
+	position: absolute;
+	left: 50%;
+	top: 10%;
+	width: 0;
+	height: 85%;
+	border: dashed 2px #2857a4;
+	/* text-align: center; */
+}
+
+/* timeline plane */
+.timeline-plane {
+	position: sticky;
+	top: 80%;
+	/* bottom: 10rem; */
+	font-size: 2rem;
+	color: #2857a4;
+	transform: rotate(90deg);
+}
+
+section {
+	margin-bottom: 5em;
+}
